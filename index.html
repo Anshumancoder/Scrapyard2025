@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Adviser for the Dead</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Health Adviser for the Dead 💀</h1><br><br>
+    <div class="container">
+        
+        <p>Enter details of the deceased to get expert health advice.</p>
+
+        <form id="deathForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="dob">Date of Death:</label>
+            <input type="date" id="dob" required>
+
+            <label for="health">Health Problems (when alive):</label>
+            <input type="text" id="health" required>
+
+            <label for="certificate">Upload Death Certificate:</label>
+            <input type="file" id="certificate" required>
+
+            <button type="submit">Get Health Tips</button>
+        </form>
+
+        <div id="healthTips" class="hidden">
+            <h2>Health Advice for You:</h2><br>
+            <p id="message"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
