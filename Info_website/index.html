@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Found Ur Personal Details</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container text-center">
+        <h1 class="mt-5 glitch">We Found Ur Personal Details!</h1>
+        <p class="lead">Our ultra-advanced AI has already gathered your personal info.</p>
+        <p>But for security reasons, please verify them below (totally not a scam 🤡).</p>
+        
+        <div class="card mt-4 p-4 shadow-lg">
+            <form id="uselessForm">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="address" class="form-label">Address:</label>
+                    <input type="text" class="form-control" id="address" placeholder="Enter your address" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone Number:</label>
+                    <input type="text" class="form-control" id="phone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+                <button type="submit" class="btn btn-danger w-100">🔍 Reveal My Info</button>
+            </form>
+        </div>
+
+        <div id="result" class="mt-4"></div>
+
+        <footer class="mt-5">
+            <p class="text-muted">&copy; 2025 We Found Ur Personal Details | Totally Not Suspicious</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
