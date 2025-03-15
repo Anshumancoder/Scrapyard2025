@@ -1,13 +1,13 @@
 document.getElementById("uselessForm").addEventListener("submit", function(event) {
     event.preventDefault();
 
-    // Get user input
+
     const name = document.getElementById("name").value;
     const address = document.getElementById("address").value;
     const phone = document.getElementById("phone").value;
     const email = document.getElementById("email").value;
 
-    // Display the "found" information with some humor
+
     document.getElementById("result").innerHTML = `
         <div class="alert alert-success mt-4">
             <h4>🔥 BOOM! We found your details! 🔥</h4>
@@ -21,7 +21,7 @@ document.getElementById("uselessForm").addEventListener("submit", function(event
         </div>
     `;
 
-    // Add a little useless animation
+
     const button = document.querySelector(".btn-danger");
     button.innerText = "🚀 HACKING INTO THE MAINFRAME...";
     setTimeout(() => {
